@@ -12,18 +12,15 @@ The deployment consists of a Deployment and a Horizontal Pod Autoscaler (HPA) co
 - A running Kubernetes cluster
 - `kubectl` configured to interact with your cluster
 
-### Files
-
-- `deployment.yaml`: Contains the Deployment and HPA configurations.
-
 ### Steps
 
 1. **Apply the Deployment and HPA Configuration**
 
-   Apply the configuration using the following command:
-
+   Apply the configuration using the following command and apply all files:
+   
    ```sh
-   kubectl apply -f deployment.yaml
+   cd hpa
+   kubectl apply -f .
    ```
 
 2. **Verify the Deployment and HPA**
