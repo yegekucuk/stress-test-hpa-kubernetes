@@ -17,7 +17,7 @@ The deployment consists of a Deployment and a Horizontal Pod Autoscaler (HPA) co
 1. **Apply the Deployment and HPA Configuration**
 
    Apply the configuration using the following command and apply all files:
-   
+
    ```sh
    cd hpa
    kubectl apply -f .
@@ -76,7 +76,7 @@ This command will start a CPU stress test with 4 workers and provide metrics out
 To remove the deployment and HPA, run:
 
 ```sh
-kubectl delete -f deployment.yaml
+kubectl delete -f .
 ```
 
 This will delete the Deployment and the HPA associated with `hpa-stress-tool`.
